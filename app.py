@@ -5,8 +5,10 @@ import sqlite3
 
 app = Flask(__name__)
 
-BOT_TOKEN = "8766035086:AAEsa2trBkP1BvvaLz3KqpkR_CE8twAha4g"
-CHAT_ID = "7711342956"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 # 🗄️ DB setup
 def init_db():
