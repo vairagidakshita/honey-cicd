@@ -6,7 +6,6 @@ It automatically injects fake (honey) credentials into GitHub repositories and m
 
 If a hacker or attacker tries to use these fake credentials, the system immediately triggers an alert with details like IP address, location, and timestamp.
 
----
 
 ##  Features
 
@@ -17,8 +16,6 @@ If a hacker or attacker tries to use these fake credentials, the system immediat
 -  GeoIP Tracking (attacker location)
 -  Cloud Deployment (Render)
 -  CI/CD Ready Architecture
-
----
 
 ##  How It Works
 
@@ -34,21 +31,6 @@ If a hacker or attacker tries to use these fake credentials, the system immediat
 5. A real-time alert is sent via Telegram.
 6. The event is displayed on a web dashboard.
 
----
-
-##  Project Structure
-
-honey-cicd/
-├── injector/
-│ └── main.py # Injects honey tokens into GitHub
-├── listener/
-│ ├── app.py # Webhook listener + dashboard
-│ ├── logs.db # SQLite database for logs
-│ └── requirements.txt
-├── README.md
-
-
----
 
 ##  Tech Stack
 
@@ -59,8 +41,6 @@ honey-cicd/
 - Telegram Bot API 
 - GeoIP API 
 - Render (Deployment) 
-
----
 
 ##  Setup Instructions
 
