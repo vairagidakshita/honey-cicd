@@ -12,7 +12,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 
 #  Check if env variables exist
 if not BOT_TOKEN or not CHAT_ID:
-    print("⚠️ WARNING: BOT_TOKEN or CHAT_ID not set!")
+    print(" WARNING: BOT_TOKEN or CHAT_ID not set!")
 
 #  Database setup
 def init_db():
@@ -43,9 +43,9 @@ def send_alert(message):
             "chat_id": CHAT_ID,
             "text": message
         })
-        print("📩 Telegram Response:", res.text)
+        print(" Telegram Response:", res.text)
     except Exception as e:
-        print("❌ Telegram Error:", e)
+        print(" Telegram Error:", e)
 
 #  Home route
 @app.route("/")
